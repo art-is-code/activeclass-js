@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Activeclass JS</title>
+
+    
+<style>
+body{
+  margin:0;
+  padding:0;
+  font-family: Verdana,sans-serif;
+  font-size:13px;
+  background-color: #EEE;
+  color:#333;
+}
+a
+{
+  text-decoration: none;
+}
+a.active{
+  color:#333;
+  text-decoration: none;
+  background-color:#CCC;
+
+}
+
+li.active
+{
+color:red;
+}
+</style>
+<script src="activeclass-js.js"></script>
+  </head>
+  <body>
+<div id="global">
+
+    <h1>ActiveClass JS</h1>
+<h2>Usage : </h2>
+<strong>Include the script  :</strong>
+<pre>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/path/to/activeclass-js.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre>
+
+if your link have a parent element you can use attribute  <i>data-activeclassjs-parents="..." </i> :
+<pre>
+&lt;a href="..." data-activeclassjs-parents="<strong>group1</strong>"&gt;&lt;/a&gt; (if you need you can use more then one parent. Use comma : group1,group2 ...)
+</pre>
+and then add the attribute <i>data-activeclassjs-ref="group1"</i> on all parents: `
+
+
+<pre>
+&lt;div  data-activeclassjs-ref="<strong>group1</strong>"&gt;...&lt;/div&gt;
+</pre>
+
+<h2>Example : </h2>
+<ul>
+  <li><a href="/" data-activeclassjs-parents="group1">Home</a></li>
+  <li> GROUP 1
+    <ul data-activeclassjs-ref="group1">
+    <li><a href="/test-a/" data-activeclassjs-parents="group1">link a</a></li>
+    <li><a href="/test-b/" data-activeclassjs-parents="group1" >link b</a></li>
+    </ul>
+  </li>
+
+  <li data-activeclassjs-ref="group2"> GROUP 2 
+    <ul>
+    <li><a href="/test-c/" data-activeclassjs-parents="group2">link c</a></li>
+    <li><a href="/activeclass-js/" data-activeclassjs-parents="group2" >link d</a></li>
+    </ul>
+
+  </li>
+</ul>
+    <!-- activeclass js by DARTEA / dartea.com -->
+    
+
+   
+  </body>
+</html>
