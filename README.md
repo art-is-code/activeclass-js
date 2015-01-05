@@ -6,6 +6,7 @@ activeclass-js is a simple script to set "active" class on links.
 How to use ?
 
 You only need to include the script on your web page :
+
 <strong>
 &lt;script src="/path/to/activeclass-js.js"&gt;&lt;/script&gt;
 </strong>
