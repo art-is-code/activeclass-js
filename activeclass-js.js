@@ -19,21 +19,24 @@ along with this program.  If not, see http://www.apache.org/licenses/LICENSE-2.0
 */
 window.addEventListener("load", function load(event){
 
-    window.removeEventListener("load", load, false); //remove listener, no longer needed
+window.removeEventListener("load", load, false); //remove listener, no longer needed
 
    (function(){
 
-    	var currentUrl = window.location.pathname;
+    	var currentUrl 	 = window.location.pathname;
 		var linkElements = document.getElementsByTagName('a');
+		var className    = 'active';
+
 		  for (var i = 0; i < linkElements.length; i++)
 		  {
 		    var href = linkElements[i].getAttribute('href');
+
 		    if(href == currentUrl)
 		     {
-		     	// Element exists with the correct attribute. 
-		     	linkElements[i].className = 'active';
-		     	//find parent attribute
+		     
+		     	linkElements[i].className = className;
 		     	var strParents = linkElements[i].getAttribute('data-activeclassjs-parents');
+		     	
 		     	if(strParents !== null)
 		     	{
 		     		var parents = strParents.split(",");
@@ -46,7 +49,7 @@ window.addEventListener("load", function load(event){
 
 		 					if(parentElements[z].getAttribute('data-activeclassjs-ref') == parents[n] )
 		 					{
-		 						parentElements[z].className = 'active';
+		 						parentElements[z].className = className;
 		 					}
 		 				}
 
