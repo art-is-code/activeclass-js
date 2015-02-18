@@ -34,7 +34,7 @@ window.removeEventListener("load", load, false); //remove listener, no longer ne
 		    if(href == currentUrl)
 		     {
 		     
-		     	linkElements[i].className = className;
+		     	linkElements[i].className = linkElements[i].className+' '+className;
 		     	var strParents = linkElements[i].getAttribute('data-activeclassjs-parents');
 		     	
 		     	if(strParents !== null)
@@ -49,7 +49,7 @@ window.removeEventListener("load", load, false); //remove listener, no longer ne
 
 		 					if(parentElements[z].getAttribute('data-activeclassjs-ref') == parents[n] )
 		 					{
-		 						parentElements[z].className = className;
+		 						parentElements[z].className = parentElements[z].className+' '+className;
 		 					}
 		 				}
 
