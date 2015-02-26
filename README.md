@@ -29,7 +29,7 @@ You can set the parent on link in this way :
 1) add the *data-activeclassjs-parents="..."*
 
 ```html
-<a href="..." data-activeclassjs-parents="**group1**"></a>
+<a href="..." data-activeclassjs-parents="group1,group2">...</a>
 
 ```
 
@@ -41,7 +41,10 @@ Now, set the parent name on parent's elements. like this :
 2) add the attribute *data-activeclassjs-ref="..."* on all parents:
 
 ```html
-<div  data-activeclassjs-ref="**group1**">...</div>
+<div  data-activeclassjs-ref="group1">...</div>
+<div  data-activeclassjs-ref="group1">...</div>
+
+<a href="..." data-activeclassjs-ref="group2">...</a>
 
 ```
 
