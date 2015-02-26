@@ -26,19 +26,19 @@ You only need to include the script on your web page (on head tags):
 You probably need to set active class on parent or any other element in the same page.
 You can set the parent on link in this way :
 
-1) add the *data-activeclassjs-parents="..."*
+1) add the **data-activeclassjs-parents="..."**
 
 ```html
 <a href="..." data-activeclassjs-parents="group1,group2">...</a>
 
 ```
 
-Note: if you need you can set multiple parents with comma : data-activeclassjs-parents="**group1,group2,...**"
+Note: if you need you can set multiple parents with comma : **data-activeclassjs-parents="group1,group2,..."**
 
 
 Now, set the parent name on parent's elements. like this : 
 
-2) add the attribute *data-activeclassjs-ref="..."* on all parents:
+2) add the attribute **data-activeclassjs-ref="..."** on all parents:
 
 ```html
 <div  data-activeclassjs-ref="group1">...</div>
