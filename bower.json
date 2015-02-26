@@ -1,0 +1,22 @@
+{
+  "name": "activeclass-js",
+  "version": "1.0.0",
+  "main": "dist/activeclass-js.min.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/dartea/activeclass-js",
+  "authors": [
+    "DARTEA A.D. <andrea@dartea.com>"
+  ],
+  "description": "add \"active\" css class on HTML item by url or data vars",
+  "keywords": [
+    "active",
+    "class"
+  ],
+  "license": "MIT"
+}
