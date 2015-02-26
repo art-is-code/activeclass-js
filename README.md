@@ -1,4 +1,4 @@
-[activeclass-js]
+activeclass-js
 =======================
 
 activeclass-js is a simple script to set "active" class on HTML element by URL.
@@ -18,8 +18,8 @@ How to use ?
 First, 
 You only need to include the script on your web page (on head tags):
 
-```
-&lt;script src="/path/to/activeclass-js.min.js"&gt;&lt;/script&gt;
+```html
+<script src="/path/to/activeclass-js.min.js"></script>
 
 ```
 
@@ -28,8 +28,8 @@ You can set the parent on link in this way :
 
 1) add the *data-activeclassjs-parents="..."*
 
-```
-&lt;a href="..." data-activeclassjs-parents="**group1**"&gt;&lt;/a&gt;
+```html
+<a href="..." data-activeclassjs-parents="**group1**"></a>
 
 ```
 
@@ -40,8 +40,10 @@ Now, set the parent name on parent's elements. like this :
 
 2) add the attribute *data-activeclassjs-ref="..."* on all parents:
 
-&lt;div  data-activeclassjs-ref="**group1**"&gt;...&lt;/div&gt;
+```html
+<div  data-activeclassjs-ref="**group1**">...</div>
 
+```
 
 License
 -------
